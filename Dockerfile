@@ -6,4 +6,5 @@ RUN python setup.py install
 ENV B2_ACCOUNTID accountid
 ENV B2_APPLICATIONKEY applicationkey
 ADD entrypoint.sh /
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
